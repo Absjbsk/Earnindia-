@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#155eef">
+  <meta name="description" content="Earn India - Share approved affiliate offers and track your referrals.">
+  <title>Earn India</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Earn India home"><span class="brand-mark">₹</span><span>Earn India</span></a>
+    <div class="top-actions">
+      <button id="langBtn" class="outline-btn" type="button">English</button>
+      <button id="installBtn" class="install-btn" type="button" hidden>Install App</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow" data-hi="आपका रेफरल डैशबोर्ड" data-en="YOUR REFERRAL DASHBOARD">आपका रेफरल डैशबोर्ड</span>
+        <h1 data-hi="शेयर करें। रेफर करें। आगे बढ़ें।" data-en="Share. Refer. Grow.">शेयर करें। रेफर करें। आगे बढ़ें।</h1>
+        <p data-hi="Earn India पर स्वीकृत ऑफ़र खोजें और अपने रेफरल का रिकॉर्ड रखें।" data-en="Discover approved offers and keep track of your referrals with Earn India.">Earn India पर स्वीकृत ऑफ़र खोजें और अपने रेफरल का रिकॉर्ड रखें।</p>
+        <a class="primary-btn" href="#offers" data-hi="ऑफ़र देखें" data-en="Explore offers">ऑफ़र देखें</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="coin coin-one">₹</div><div class="coin coin-two">↗</div>
+        <div class="phone-card"><div class="phone-line"></div><div class="phone-line short"></div><div class="phone-amount">₹ 250</div><div class="phone-pill">Referral</div></div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Summary">
+      <article class="stat-card"><span data-hi="कुल रेफरल" data-en="Total referrals">कुल रेफरल</span><strong id="refCount">0</strong><small data-hi="डेमो डेटा" data-en="Demo data">डेमो डेटा</small></article>
+      <article class="stat-card"><span data-hi="अनुमानित कमीशन" data-en="Estimated commission">अनुमानित कमीशन</span><strong id="commission">₹0</strong><small data-hi="वास्तविक भुगतान नहीं" data-en="Not real earnings">वास्तविक भुगतान नहीं</small></article>
+      <article class="stat-card"><span data-hi="लिंक क्लिक" data-en="Link clicks">लिंक क्लिक</span><strong id="clickCount">0</strong><small data-hi="डेमो डेटा" data-en="Demo data">डेमो डेटा</small></article>
+    </section>
+
+    <section class="section" id="offers">
+      <div class="section-heading"><div><span class="eyebrow" data-hi="शुरुआत करें" data-en="GET STARTED">शुरुआत करें</span><h2 data-hi="लोकप्रिय ऑफ़र" data-en="Featured offers">लोकप्रिय ऑफ़र</h2></div><span class="tag" data-hi="उदाहरण" data-en="SAMPLE">उदाहरण</span></div>
+      <div class="offer-grid">
+        <article class="offer-card"><div class="offer-icon blue">🛍️</div><h3 data-hi="शॉपिंग ऑफ़र" data-en="Shopping offers">शॉपिंग ऑफ़र</h3><p data-hi="स्वीकृत एफिलिएट लिंक शेयर करें।" data-en="Share approved affiliate links.">स्वीकृत एफिलिएट लिंक शेयर करें।</p><button class="share-btn" data-offer="shopping" data-hi="लिंक कॉपी करें" data-en="Copy sample link">लिंक कॉपी करें</button></article>
+        <article class="offer-card"><div class="offer-icon purple">📱</div><h3 data-hi="ऐप ऑफ़र" data-en="App offers">ऐप ऑफ़र</h3><p data-hi="कंपनी के नियमों के अनुसार रेफर करें।" data-en="Refer according to each provider's rules.">कंपनी के नियमों के अनुसार रेफर करें।</p><button class="share-btn" data-offer="apps" data-hi="लिंक कॉपी करें" data-en="Copy sample link">लिंक कॉपी करें</button></article>
+        <article class="offer-card"><div class="offer-icon green">🎓</div><h3 data-hi="लर्निंग ऑफ़र" data-en="Learning offers">लर्निंग ऑफ़र</h3><p data-hi="कोर्स और सीखने के संसाधन शेयर करें।" data-en="Share courses and learning resources.">कोर्स और सीखने के संसाधन शेयर करें।</p><button class="share-btn" data-offer="learning" data-hi="लिंक कॉपी करें" data-en="Copy sample link">लिंक कॉपी करें</button></article>
+      </div>
+    </section>
+
+    <section class="section referral-panel">
+      <div><span class="eyebrow" data-hi="आपका लिंक" data-en="YOUR LINK">आपका लिंक</span><h2 data-hi="अपना रेफरल लिंक शेयर करें" data-en="Share your referral link">अपना रेफरल लिंक शेयर करें</h2><p data-hi="यह केवल डेमो लिंक है। असली ट्रैकिंग के लिए Affiliate Program का आधिकारिक लिंक जोड़ें।" data-en="This is a demo link. Add an official affiliate link for real tracking.">यह केवल डेमो लिंक है। असली ट्रैकिंग के लिए Affiliate Program का आधिकारिक लिंक जोड़ें।</p></div>
+      <div class="link-row"><input id="refLink" value="https://example.com/?ref=EARNINDIA" readonly aria-label="Demo referral link"><button id="copyRef" class="primary-btn" type="button" data-hi="कॉपी" data-en="Copy">कॉपी</button></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><div><span class="eyebrow" data-hi="रिकॉर्ड" data-en="ACTIVITY">रिकॉर्ड</span><h2 data-hi="हाल की गतिविधि" data-en="Recent activity">हाल की गतिविधि</h2></div></div>
+      <div class="activity-empty"><span>📋</span><p data-hi="अभी कोई वास्तविक गतिविधि नहीं है।" data-en="No real activity yet.">अभी कोई वास्तविक गतिविधि नहीं है।</p></div>
+    </section>
+
+    <section class="notice"><strong data-hi="ज़रूरी जानकारी" data-en="Important">ज़रूरी जानकारी</strong><p data-hi="यह शुरुआती डेमो है। दिखाए गए आँकड़े और लिंक उदाहरण के लिए हैं—इनसे असली कमीशन, भुगतान या रेफरल ट्रैक नहीं होते। किसी भी Affiliate Program की पात्रता, उम्र, टैक्स और भुगतान शर्तें पढ़ें।" data-en="This is a starter demo. The displayed figures and links are samples only—they do not track real referrals, commissions or payments. Check each affiliate program's eligibility, age, tax and payout terms.">यह शुरुआती डेमो है। दिखाए गए आँकड़े और लिंक उदाहरण के लिए हैं—इनसे असली कमीशन, भुगतान या रेफरल ट्रैक नहीं होते। किसी भी Affiliate Program की पात्रता, उम्र, टैक्स और भुगतान शर्तें पढ़ें।</p></section>
+  </main>
+  <footer>© <span id="year"></span> Earn India · <span data-hi="ईमानदार रेफरल, साफ़ जानकारी" data-en="Honest referrals, clear information">ईमानदार रेफरल, साफ़ जानकारी</span></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
